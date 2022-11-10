@@ -13,6 +13,7 @@ public class Win {
         }
         return result;
     }
+
     public static boolean isHorizontal(int[][] board, int num) {
         boolean result = true;
         for (int i = 0; i < board[num].length; i++) {
@@ -34,4 +35,5 @@ public class Win {
         }
         return result;
     }
+
 }
