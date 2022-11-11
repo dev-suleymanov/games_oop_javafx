@@ -4,11 +4,9 @@ public class Win {
     public static boolean check(int[][] board) {
         boolean result = false;
         for (int i = 0; i < board.length; i++) {
-            for (int j = 0; j < board[i].length; j++) {
-                if (isHorizontal(board, i) || isVertical(board, j)) {
-                    result = true;
-                    break;
-                }
+            if (board[i][i] == 1 && isHorizontal(board, i) || isVertical(board, i)) {
+                result = true;
+                break;
             }
         }
         return result;
