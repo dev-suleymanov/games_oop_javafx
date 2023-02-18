@@ -33,7 +33,7 @@ public class BishopBlackTest {
     }
 
     @Test
-    void whenNotDiagonal() {
+    public void whenNotDiagonal() {
         BishopBlack bishopBlack = new BishopBlack(Cell.D8);
         Boolean result = bishopBlack.isDiagonal(bishopBlack.position(), Cell.E8);
         assertFalse(result);
