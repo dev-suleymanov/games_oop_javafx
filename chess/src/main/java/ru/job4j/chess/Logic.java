@@ -25,7 +25,7 @@ public final class Logic {
         for (Cell step : steps) {
             for (Figure occupied : figures) {
                 if (occupied != null && occupied.position().equals(step)) {
-                    throw new OccupiedCellException();
+                    String.format("The shapes occupy elements from the steps array");
                 }
             }
         }
